@@ -1,0 +1,109 @@
+.botones{
+  display: flex;
+  justify-content: center;
+  gap: 113px;
+  padding: 40px;
+  }
+
+  .botonsolo{
+    font-family: 'Pixelify Sans';
+    color: #2AA054;
+    font-size: 25px;
+    font-weight: bold;
+    border: 4px solid #2AA054;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px #00000025;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .botonsolo:hover{
+    background-color: #2AA054;
+    color: #f5f5f5;
+    transform: translateY(-6px);
+  }
+
+  .container{
+    margin: 0 350px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 32px; /* gutter horizontal */
+    row-gap: 32px; /* gutter vertical */
+  }
+  
+  .grid-item{
+    box-sizing: border-box;
+  }
+
+  .item-izquierda{
+    grid-column: span 4;
+  }
+  
+  .colorJuan{
+    color: #2AA054;
+  }
+
+    .item-derecha{
+    grid-column: span 8;
+  }
+
+  .item-izquierda{
+      /* p.ej. fondo para ver el contenedor */
+  background: rgba(0, 128, 0, 0.1);
+  height: 456px;  /* ajusta al tamaño real */
+  }
+
+  .item-derecha{
+    font-family: 'Pixelify Sans';
+    font-size: 32px;
+  }
+  
+  .descripcion{
+    font-family: 'Pixelify Sans';
+    font-size: 36px;
+  }
+
+  .item-derecha button{
+    font-family: 'Pixelify Sans';
+    color: #2AA054;
+    font-size: 25px;
+    font-weight: bold;
+    border: 4px solid #2AA054;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px #00000025;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+    .item-derecha button:hover{
+    background-color: #2AA054;
+    color: #f5f5f5;
+    transform: translateY(-6px);
+  }
+
+  .img-wrapper{
+    position: relative;
+    width: 456px;
+    height: 456px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+      .img-wrapper:hover{
+    transform: translateY(-6px);
+  }
+
+  .img-wrapper .img-abajo{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .img-wrapper .img-encima{
+    position: absolute;
+    top: 30px;
+    left: 35px;
+    width: 85%;
+    height: 85%;
+    z-index: 10;
+  }
